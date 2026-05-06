@@ -33,6 +33,9 @@ const CONFIG = {
 };
 
 
+document.getElementById("fbLink").addEventListener("click", function() {
+  window.open("https://www.facebook.com/profile.php?id=61589343053693&sk=directory_basic_info", "_blank");
+});
 
 /* ============================================================
    [EDIT_TEXT] — DEFAULT CONTENT YOU CAN CHANGE
