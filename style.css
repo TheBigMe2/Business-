@@ -624,3 +624,148 @@ section::before {
   position: absolute; left: 40px; bottom: 40px;
   font-size: 100px; opacity: 0.05; pointer-events: none;
 }
+
+/* ===========================
+   🔥 MOBILE FIX (CLEAN + MODERN)
+=========================== */
+
+/* Ultra small phones (like older Android) */
+@media (max-width: 480px) {
+
+  /* ===== GENERAL ===== */
+  section {
+    padding: 50px 0;
+  }
+
+  .section-container {
+    padding: 0 16px;
+    gap: 28px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-intro {
+    font-size: 14px;
+  }
+
+  /* ===== NAVBAR ===== */
+  .nav-container {
+    padding: 0 16px;
+  }
+
+  .nav-logo img {
+    height: 42px;
+  }
+
+  .nav-links {
+    padding: 14px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding-top: calc(var(--nav-h) + 10px);
+  }
+
+  .hero-content {
+    padding: 10px 16px 0;
+  }
+
+  .title-lucban {
+    font-size: 42px;
+  }
+
+  .title-empanada {
+    font-size: 32px;
+    -webkit-text-stroke: 1px var(--dark-brown);
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    padding: 10px;
+  }
+
+  /* ===== ABOUT ===== */
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .about-img-main img {
+    height: 200px;
+  }
+
+  .about-img-secondary img {
+    height: 150px;
+  }
+
+  /* ===== PRODUCT ===== */
+  .product-img {
+    height: 180px;
+  }
+
+  .product-info h3 {
+    font-size: 18px;
+  }
+
+  /* ===== GALLERY ===== */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* ===== ORDER ===== */
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .order-status-box {
+    padding: 20px;
+  }
+
+  /* ===== CONTACT ===== */
+  .social-links {
+    grid-template-columns: 1fr;
+  }
+
+  .social-card {
+    padding: 20px;
+  }
+
+  /* ===== NEWSLETTER ===== */
+  .newsletter-box {
+    padding: 20px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer-nav {
+    gap: 10px;
+  }
+
+  /* ===== MODAL ===== */
+  .modal-box {
+    padding: 20px 16px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
