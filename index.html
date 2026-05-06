@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucban Empanada – Lucbanin Bites Co.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Fredoka+One&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- Floating particles background -->
+<div id="particles"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <img src="images/logo.png" alt="Lucban Empanada Logo" />
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About Us</a></li>
+      <li><a href="#product" class="nav-link">Our Empanada</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#order" class="nav-link">Order</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><button class="btn-login-nav" id="openLoginBtn">Login / Sign Up</button></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge animate-in">🌶️ Straight from Lucban, Quezon</div>
+    <h1 class="hero-title animate-in delay-1">
+      <span class="title-lucban">LUCBAN</span><br/>
+      <span class="title-empanada">EMPANADA</span>
+    </h1>
+    <p class="hero-sub animate-in delay-2">"Lucban Empanada, Ano Tara?"</p>
+    <p class="hero-desc animate-in delay-3">
+      Handcrafted with love and tradition — the authentic taste of Lucban, Quezon,
+      now delivered right to your door by <strong>Lucbanin Bites Co.</strong>
+    </p>
+    <div class="hero-availability animate-in delay-4" id="heroAvailability">
+      <div class="avail-dot" id="availDot"></div>
+      <span id="availText">Checking availability...</span>
+    </div>
+    <div class="hero-btns animate-in delay-5">
+      <a href="#order" class="btn-primary">Order Now 🛒</a>
+      <a href="#about" class="btn-secondary">Learn More</a>
+    </div>
+  </div>
+  <div class="hero-image animate-in delay-2">
+    <div class="hero-img-frame">
+      <img src="images/empanada-whole.jpg" alt="Lucban Empanada" />
+      <div class="img-badge">🏆 Traditional Recipe</div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <span>Scroll to explore</span>
+    <i class="fas fa-chevron-down bounce"></i>
+  </div>
+</section>
+
+<!-- AVAILABILITY BANNER -->
+<div class="avail-banner" id="availBanner">
+  <div class="avail-banner-inner">
+    <span class="avail-icon" id="bannerIcon">⏳</span>
+    <span id="bannerText">Loading availability...</span>
+  </div>
+</div>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+  <div class="section-container">
+    <div class="about-text">
+      <div class="section-tag">Our Story</div>
+      <h2 class="section-title">A Taste of <span class="highlight">Lucban</span></h2>
+      <p>
+        Nestled in the heart of Quezon province, Lucban is a town celebrated for its rich
+        cultural heritage and iconic flavors. The <strong>Lucban Empanada</strong> — crispy,
+        golden, and stuffed with savory goodness — has been a beloved tradition for generations.
+      </p>
+      <p>
+        At <strong>Lucbanin Bites Co.</strong>, we bring that treasured hometown taste to
+        wherever you are. Each empanada is handcrafted using time-honored recipes, fresh
+        local ingredients, and the same passion that has made Lucban's food legendary.
+      </p>
+      <p>
+        From the distinctively crimped golden crust to the hearty filling of meat, vegetables,
+        and egg — every bite is a journey to Lucban. <em>Ano tara?</em>
+      </p>
+      <div class="about-badges">
+        <div class="badge-item">🥚 Fresh Ingredients</div>
+        <div class="badge-item">👐 Handcrafted Daily</div>
+        <div class="badge-item">🏡 Traditional Recipe</div>
+        <div class="badge-item">📦 Carefully Packaged</div>
+      </div>
+    </div>
+    <div class="about-images">
+      <div class="about-img-main">
+        <img src="images/empanada-inside.jpg" alt="Inside the Empanada" />
+      </div>
+      <div class="about-img-secondary">
+        <img src="images/packaging.jpg" alt="Empanada Packaging" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT SECTION -->
+<section id="product" class="product-section">
+  <div class="section-container centered">
+    <div class="section-tag">What We Offer</div>
+    <h2 class="section-title">Our <span class="highlight">Empanada</span></h2>
+    <p class="section-intro">
+      Made fresh every day — the authentic Lucban way.
+    </p>
+    <div class="product-cards">
+      <div class="product-card">
+        <div class="product-img">
+          <img src="images/empanada-raw.jpg" alt="Classic Lucban Empanada" />
+        </div>
+        <div class="product-info">
+          <h3>Classic Lucban Empanada</h3>
+          <p>Our signature recipe — crispy pastry shell filled with savory ground pork, vegetables, and salted egg. The real deal from Lucban.</p>
+          <div class="product-tags">
+            <span>🥩 Pork</span><span>🥚 Salted Egg</span><span>🥕 Veggies</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card featured">
+        <div class="featured-badge">⭐ Best Seller</div>
+        <div class="product-img">
+          <img src="images/empanada-cut.jpg" alt="Cross-section view" />
+        </div>
+        <div class="product-info">
+          <h3>Baked Lucban Empanada</h3>
+          <p>A lighter take on the classic — oven-baked to golden perfection with the same authentic filling that Lucban is known for.</p>
+          <div class="product-tags">
+            <span>🌾 Baked</span><span>🧅 Aromatic</span><span>💛 Golden</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img">
+          <img src="images/empanada-inside.jpg" alt="Empanada inside" />
+        </div>
+        <div class="product-info">
+          <h3>Special Lucban Empanada</h3>
+          <p>Packed with extra fillings — more meat, more veggies, and a generous slice of salted egg. For those who want the full experience.</p>
+          <div class="product-tags">
+            <span>🔥 Extra Filling</span><span>🎉 Special</span><span>💪 Hearty</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section id="gallery" class="gallery-section">
+  <div class="section-container centered">
+    <div class="section-tag">From Our Kitchen</div>
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-src="images/empanada-whole.jpg">
+        <img src="images/empanada-whole.jpg" alt="Empanada whole" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/empanada-cut.jpg">
+        <img src="images/empanada-cut.jpg" alt="Empanada cut open" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/empanada-raw.jpg">
+        <img src="images/empanada-raw.jpg" alt="Empanada raw" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/empanada-inside.jpg">
+        <img src="images/empanada-inside.jpg" alt="Inside empanada" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="gallery-item" data-src="images/packaging.jpg">
+        <img src="images/packaging.jpg" alt="Packaging" />
+        <div class="gallery-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+  <img id="lightboxImg" src="" alt="Gallery image" />
+</div>
+
+<!-- ORDER SECTION -->
+<section id="order" class="order-section">
+  <div class="section-container centered">
+    <div class="section-tag">Place Your Order</div>
+    <h2 class="section-title">Order <span class="highlight">Now</span></h2>
+    <div class="order-status-box" id="orderStatusBox">
+      <div class="order-status-icon" id="orderStatusIcon">⏳</div>
+      <div class="order-status-text">
+        <h3 id="orderStatusTitle">Checking Status...</h3>
+        <p id="orderStatusDesc">Please wait while we check availability.</p>
+      </div>
+    </div>
+    <div class="order-form-wrap" id="orderFormWrap">
+      <p class="order-login-prompt">Please <button class="inline-btn" id="openLoginFromOrder">login or sign up</button> to place an order and receive updates.</p>
+    </div>
+    <div class="order-how">
+      <h3>How to Order</h3>
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><p>Sign up or log in to your account</p></div>
+        <div class="step"><div class="step-num">2</div><p>Check availability status above</p></div>
+        <div class="step"><div class="step-num">3</div><p>Message us on our social media</p></div>
+        <div class="step"><div class="step-num">4</div><p>Receive your fresh Lucban Empanada!</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / SOCIAL SECTION -->
+<section id="contact" class="contact-section">
+  <div class="section-container centered">
+    <div class="section-tag">Stay Connected</div>
+    <h2 class="section-title">Find Us Online</h2>
+    <p class="section-intro">Follow us for the latest updates, availability announcements, and more!</p>
+    <div class="social-links">
+      <a href="https://facebook.com/YOUR_PAGE" target="_blank" class="social-card facebook" id="fbLink">
+        <i class="fab fa-facebook-f"></i>
+        <span>Facebook</span>
+        <small>Lucbanin Bites Co.</small>
+      </a>
+      <a href="https://instagram.com/YOUR_ACCOUNT" target="_blank" class="social-card instagram" id="igLink">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+        <small>@lucbanin_bites</small>
+      </a>
+      <a href="https://tiktok.com/@YOUR_ACCOUNT" target="_blank" class="social-card tiktok" id="ttLink">
+        <i class="fab fa-tiktok"></i>
+        <span>TikTok</span>
+        <small>@lucbanin_bites</small>
+      </a>
+      <a href="mailto:lucbaninbites@gmail.com" class="social-card email" id="emailLink">
+        <i class="fas fa-envelope"></i>
+        <span>Email Us</span>
+        <small>lucbaninbites@gmail.com</small>
+      </a>
+    </div>
+    <div class="newsletter-box">
+      <h3>📬 Get Notified When We're Open!</h3>
+      <p>Sign up to get email and push notifications when empanadas are available.</p>
+      <button class="btn-primary" id="notifySignupBtn">Sign Up for Notifications</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="images/logo.png" alt="Logo" />
+      <p>Lucbanin Bites Co.</p>
+    </div>
+    <div class="footer-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#product">Products</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <p class="footer-copy">© 2025 Lucbanin Bites Co. · All Rights Reserved · Made with ❤️ in Lucban, Quezon</p>
+  </div>
+</footer>
+
+<!-- LOGIN / SIGNUP MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal-box">
+    <button class="modal-close" id="closeAuthModal"><i class="fas fa-times"></i></button>
+    <div class="modal-tabs">
+      <button class="modal-tab active" id="tabLogin">Login</button>
+      <button class="modal-tab" id="tabSignup">Sign Up</button>
+    </div>
+    <!-- LOGIN FORM -->
+    <div class="modal-form" id="formLogin">
+      <h2>Welcome Back! 👋</h2>
+      <p>Login to get order updates.</p>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="you@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" />
+      </div>
+      <div class="form-msg" id="loginMsg"></div>
+      <button class="btn-primary full" id="loginBtn">Login</button>
+      <p class="switch-msg">No account? <button class="link-btn" id="goSignup">Sign up here</button></p>
+    </div>
+    <!-- SIGNUP FORM -->
+    <div class="modal-form hidden" id="formSignup">
+      <h2>Join Us! 🎉</h2>
+      <p>Sign up to receive availability updates.</p>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="signupName" placeholder="Your full name" />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="signupEmail" placeholder="you@email.com" />
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="signupPassword" placeholder="••••••••" />
+      </div>
+      <div class="form-check">
+        <input type="checkbox" id="notifyMe" checked />
+        <label for="notifyMe">Notify me when Empanada is available 🔔</label>
+      </div>
+      <div class="form-msg" id="signupMsg"></div>
+      <button class="btn-primary full" id="signupBtn">Create Account</button>
+      <p class="switch-msg">Already have one? <button class="link-btn" id="goLogin">Login here</button></p>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL (hidden, secret access) -->
+<div class="modal-overlay" id="adminModal">
+  <div class="modal-box admin-box">
+    <button class="modal-close" id="closeAdminModal"><i class="fas fa-times"></i></button>
+    <h2>🔐 Admin Panel</h2>
+    <p class="admin-sub">Lucbanin Bites Co. — Web Dev Access Only</p>
+
+    <!-- Admin Login -->
+    <div id="adminLoginSection">
+      <div class="form-group">
+        <label>Admin Password</label>
+        <input type="password" id="adminPassword" placeholder="Enter admin password" />
+      </div>
+      <div class="form-msg" id="adminMsg"></div>
+      <button class="btn-primary full" id="adminLoginBtn">Access Panel</button>
+    </div>
+
+    <!-- Admin Controls -->
+    <div id="adminControls" class="hidden">
+      <div class="admin-section">
+        <h3>🟢 Availability Control</h3>
+        <div class="toggle-row">
+          <span>Empanada Available for Order</span>
+          <label class="toggle">
+            <input type="checkbox" id="availToggle" />
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label>Availability Message</label>
+          <input type="text" id="availMessage" placeholder="e.g. Available today until 6PM!" />
+        </div>
+        <button class="btn-primary" id="saveAvailBtn">Save & Notify Subscribers</button>
+        <div class="form-msg" id="availSaveMsg"></div>
+      </div>
+
+      <div class="admin-section">
+        <h3>📢 Send Update to Subscribers</h3>
+        <div class="form-group">
+          <label>Update Title</label>
+          <input type="text" id="updateTitle" placeholder="e.g. Fresh batch ready!" />
+        </div>
+        <div class="form-group">
+          <label>Update Message</label>
+          <textarea id="updateMessage" placeholder="Write your update here..." rows="3"></textarea>
+        </div>
+        <button class="btn-primary" id="sendUpdateBtn">Send Update</button>
+        <div class="form-msg" id="updateMsg"></div>
+      </div>
+
+      <div class="admin-section">
+        <h3>🔗 Edit Social Links</h3>
+        <div class="form-group">
+          <label>Facebook URL</label>
+          <input type="url" id="adminFb" placeholder="https://facebook.com/..." />
+        </div>
+        <div class="form-group">
+          <label>Instagram URL</label>
+          <input type="url" id="adminIg" placeholder="https://instagram.com/..." />
+        </div>
+        <div class="form-group">
+          <label>TikTok URL</label>
+          <input type="url" id="adminTt" placeholder="https://tiktok.com/@..." />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="adminEmail" placeholder="yourEmail@gmail.com" />
+        </div>
+        <button class="btn-primary" id="saveSocialBtn">Save Social Links</button>
+        <div class="form-msg" id="socialSaveMsg"></div>
+      </div>
+
+      <div class="admin-section">
+        <h3>👥 Subscribers List</h3>
+        <div id="subscribersList" class="subscribers-list"></div>
+        <p id="noSubscribers" class="muted">No subscribers yet.</p>
+      </div>
+
+      <div class="admin-section">
+        <h3>📝 Edit About Text</h3>
+        <div class="form-group">
+          <label>About Section Text</label>
+          <textarea id="adminAboutText" rows="4" placeholder="Edit your about text..."></textarea>
+        </div>
+        <button class="btn-primary" id="saveAboutBtn">Save About Text</button>
+        <div class="form-msg" id="aboutSaveMsg"></div>
+      </div>
+
+      <button class="btn-danger" id="adminLogoutBtn">Logout from Admin</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast" id="toast"></div>
+
+<!-- USER LOGGED IN NAV STATE -->
+<div class="user-bar hidden" id="userBar">
+  <span id="userBarName">Hi, User!</span>
+  <button class="btn-sm" id="userLogoutBtn">Logout</button>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
