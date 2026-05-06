@@ -32,15 +32,7 @@ const CONFIG = {
   TOAST_DURATION: 3500,
 };
 
-/* ============================================================
-   [SOCIAL] — DEFAULT SOCIAL LINKS (edit in Admin Panel too)
-   ============================================================ */
-const DEFAULT_SOCIAL = {
-  facebook:  'https://facebook.com/YOUR_FACEBOOK_PAGE',
-  instagram: 'https://instagram.com/YOUR_INSTAGRAM',
-  tiktok:    'https://tiktok.com/@YOUR_TIKTOK',
-  email:     'lucbaninbites@gmail.com',
-};
+
 
 /* ============================================================
    [EDIT_TEXT] — DEFAULT CONTENT YOU CAN CHANGE
